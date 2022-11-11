@@ -1,11 +1,12 @@
 import React from 'react'
 import { Heading,Text ,Box,Button,HStack,Image,Flex} from '@chakra-ui/react'
+
 const Header = () => {
-  return (<>
+  return (<div>
   <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 </style>
-    <Heading fontSize="42px" fontFamily="Poppins" mt="150px">Email Sandbox</Heading>
+    <Heading fontSize="42px" fontFamily="Poppins" mt="100px">Email Sandbox</Heading>
     <Box mt="50px">
     <Text fontSize="20px" fontWeight="600" lineHeight="23px" p="15px">Capture SMTP traffic from staging and dev environments</Text>
     <Text fontSize="20px" fontWeight="600" lineHeight="23px" p="15px">Automate test flows and scenarios with flexible API</Text>
@@ -21,8 +22,9 @@ const Header = () => {
   </HStack>
   <Flex justifyContent="center" mt="40px">
   <Image  src="https://mailtrap.io/wp-content/uploads/2021/05/img__homepage-964x574.png"/>
+
   </Flex>
-  </>
+  </div>
   )
 }
 
