@@ -17,7 +17,7 @@ import { ChevronDownIcon } from "@chakra-ui/icons";
 const Navbar = () => {
     //const { isOpen, onOpen, onClose } = useDisclosure()
   return (
-    <Flex justifyContent="center" pos="fixed" bg="white" >
+    <Flex justifyContent="center"  bg="white" mt="15px" >
       
         <Image 
           w="10%"

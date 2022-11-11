@@ -1,5 +1,4 @@
 import React from "react";
-
 const Topbar = () => {
   return (
     <div
@@ -10,7 +9,7 @@ const Topbar = () => {
         fontWeight: "600",
         fontSize: "18px",
         lineHeight: "30px",
-        onScroll: "fixed",
+        
         
       }}
     >
