@@ -1,5 +1,6 @@
 import React from 'react'
 import { Heading,Text ,Box,Button,HStack,Image,Flex} from '@chakra-ui/react'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (<div>
@@ -12,7 +13,10 @@ const Header = () => {
     <Text fontSize="20px" fontWeight="600" lineHeight="23px" p="15px">Automate test flows and scenarios with flexible API</Text>
     <Text fontSize="20px" fontWeight="600" lineHeight="23px" p="15px">Analyze email content for spam score and validate HTML/CSS</Text>
     </Box>
+    <NavLink to="/sign-up">
+
     <Button color="white" bg="green.300" fontSize="14px" p="22px" mt="40px" >Sign Up for Free</Button>
+    </NavLink>
   <HStack mt="50px" justifyContent="center">
     <Image src='https://mailtrap.io/wp-content/uploads/2021/04/Rails.svg'/>
     <Image src="https://mailtrap.io/wp-content/uploads/2021/04/Python.svg"/>
