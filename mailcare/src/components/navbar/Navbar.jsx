@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import {
   HStack,
   Text,
@@ -18,17 +19,17 @@ const Navbar = () => {
     //const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <Flex justifyContent="center"  bg="white" mt="15px" >
-      
+        <NavLink to="/">
         <Image 
-          w="10%"
+          w="50%"
           h="auto"
           src="https://i.postimg.cc/y891HtH8/Screenshot-2022-11-11-032413.png"
           alt="Mailcare"
           ml={{sm:"20rem",md:"10rem",lg:"5rem",xl:"1rem"}}
-          
-        />
+          />
+          </NavLink>
       
-      <HStack ml={{sm:"5rem",md:"10rem",lg:"15rem",xl:"20rem"}} spacing="50px" mr="5rem" >
+      <HStack ml={{sm:"5rem",md:"10rem",lg:"15rem",xl:"10rem"}} spacing="20px" mr="4rem" >
         <Menu>
           <MenuButton color="blue.900" bg="white"  as={Button} rightIcon={<ChevronDownIcon />}>
             Email Testing
@@ -146,14 +147,17 @@ const Navbar = () => {
           </MenuList>
         </Menu>
       </HStack>
-      <Stack direction="row" spacing={4} align="center">
-        
+      <Stack direction="row" spacing={4} align="center" mr={2}>
+        <NavLink to="/log-in">
         <Button color="green.400" variant="outline">
           Log in
         </Button>
+        </NavLink>
+        <NavLink to="/sign-up">
         <Button colorScheme="green"  color="white" variant="solid">
           Sign up
         </Button>
+        </NavLink>
       </Stack>
     </Flex>
   );
